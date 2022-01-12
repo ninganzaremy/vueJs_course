@@ -88,7 +88,7 @@
 				</div>
 				<div>
 					<button type="reset" class="reset">Reset</button>
-					<button type="submit">Confirm Tickets</button>
+					<button type="submit" v-bind:disabled="!formIsValid">Confirm Tickets</button>
 				</div>
 			</form>
 		</div>
