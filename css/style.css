@@ -138,7 +138,10 @@ button {
 button:hover {
 	background-color: #1e5df1;
 }
-
+button.active {
+	cursor: pointer;
+	background-color: #4c7ef3;
+}
 button.reset {
 	background-color: #e85b49;
 }

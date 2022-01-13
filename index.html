@@ -88,7 +88,7 @@
 				</div>
 				<div>
 					<button type="reset" class="reset">Reset</button>
-					<button type="submit" v-bind:style="submitButtonStyles">Confirm Tickets</button>
+					<button type="submit" v-bind:style="submitButtonStyles" v-bind:class="{ active: formIsValid }">Confirm Tickets</button>
 				</div>
 			</form>
 		</div>
