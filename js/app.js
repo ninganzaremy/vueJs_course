@@ -9,6 +9,7 @@ const app = new Vue({
 		referrals: [],
 		specialRequests: "",
 		purchaseAgreementSigned: false,
+		requiredFieldClass: "required",
 	},
 	computed: {
 		fullName: {
@@ -96,6 +97,12 @@ const app = new Vue({
 					"border-color": "#da5252",
 				};
 			}
+		},
+		emailClasses: function () {
+			return {
+				touched: this.email.length !== 0,
+				invalid: this.email && !this.emailIsValid,
+			};
 		},
 	},
 	watch: {

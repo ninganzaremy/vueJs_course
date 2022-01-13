@@ -49,6 +49,18 @@ select {
 	background-color: #ffffff;
 	border: solid 1px #979797;
 }
+input.required {
+	border-width: 2px;
+}
+
+input.touched {
+	border-color: #bdbcbc;
+}
+
+input.invalid {
+	background-color: #ffeded;
+	border-color: #da5252;
+}
 
 textarea {
 	height: 5.2rem;
