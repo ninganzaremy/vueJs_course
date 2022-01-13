@@ -76,6 +76,27 @@ const app = new Vue({
 				};
 			}
 		},
+		touchedEmailStyles: function () {
+			if (this.email) {
+				return {
+					"border-color": "#bdbcbc",
+					"border-width": "2px",
+				};
+			} else {
+				return {
+					"border-color": "#e0e0e0",
+					"border-width": "2px",
+				};
+			}
+		},
+		invalidEmailStyles: function () {
+			if (this.email && !this.emailIsValid) {
+				return {
+					"background-color": "#ffeded",
+					"border-color": "#da5252",
+				};
+			}
+		},
 	},
 	watch: {
 		specialRequests: function (newRequests, oldRequests) {
