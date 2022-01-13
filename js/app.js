@@ -49,6 +49,20 @@ const app = new Vue({
 		formIsValid: function () {
 			return this.firstName && this.lastName && this.email && this.purchaseAgreementSigned;
 		},
+		submitButtonColor: function () {
+			if (this.formIsValid) {
+				return "#4c7ef3";
+			} else {
+				return "gray";
+			}
+		},
+		submitButtonCursor: function () {
+			if (this.formIsValid) {
+				return "pointer";
+			} else {
+				return "default";
+			}
+		},
 	},
 	watch: {
 		specialRequests: function (newRequests, oldRequests) {
